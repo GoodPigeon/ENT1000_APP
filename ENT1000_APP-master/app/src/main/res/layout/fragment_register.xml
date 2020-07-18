@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_detect"
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#FFFFFF"
+        app:borderWidth="3dp"
+        app:rippleColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_detect"
+        app:ckFocus="tapWithMarker"
+        app:ckFlash="auto"
+        app:ckJpegQuality="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.wonderkiln.camerakit.CameraView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/manualbutton"
+        android:layout_width="57dp"
+        android:layout_height="61dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_keyboard_white_24dp"
+        android:text="Registrer manuelt"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_detect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toEndOf="@+id/btn_detect" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "933127982836",
+    "firebase_url": "https://intoleranser.firebaseio.com",
+    "project_id": "intoleranser",
+    "storage_bucket": "intoleranser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933127982836:android:e15d4c00843398b52718a1",
+        "android_client_info": {
+          "package_name": "com.example.intoleranser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933127982836-h8f6fggova6mjuuptdamtij33gfbdsa0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.intoleranser",
+            "certificate_hash": "30ccac214f0c0c2502c3e405d34a502b9a009039"
+          }
+        },
+        {
+          "client_id": "933127982836-lq6nvf3t4h4edm1kdoemhatdcsibikhe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJBrW7eQ6jkb2sFoGAxj8jS_o9C4C9HVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933127982836-lq6nvf3t4h4edm1kdoemhatdcsibikhe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

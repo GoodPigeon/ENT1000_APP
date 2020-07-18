@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MAPP</string>
+    <string name="title_calendar">Kalender</string>
+    <string name="title_register">Registrer</string>
+    <string name="title_graph">Graf</string>
+    <string name="process">Process</string>
+    <string name="detect">DETECT</string>
+    <string name="ta_bilde">Ta bilde</string>
+    <string name="del">Del</string>
+</resources>

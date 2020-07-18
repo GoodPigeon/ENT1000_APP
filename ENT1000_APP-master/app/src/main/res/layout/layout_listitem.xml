@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="#323232"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/listrisiko"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/slettknapp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/listalvorlighet"
+        app:layout_constraintTop_toBottomOf="@+id/listnavn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Risiko:"
+        android:textColor="#E3E3E3"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/listalvorlighet"
+        app:layout_constraintStart_toStartOf="@+id/listrisiko"
+        app:layout_constraintTop_toBottomOf="@+id/listnavn" />
+
+    <TextView
+        android:id="@+id/listalvorlighet"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/listsymptom"
+        app:layout_constraintTop_toBottomOf="@+id/listnavn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/listnavn"
+        android:layout_width="223dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="132dp"
+        android:textColor="#FFFFFF"
+        app:fontFamily="sans-serif-medium"
+        app:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="15sp"
+        android:autoSizeStepGranularity="1sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Foodname" />
+
+    <TextView
+        android:id="@+id/listdato"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="-5dp"
+        android:ems="10"
+        android:text="dato"
+        android:textAlignment="viewEnd"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/redigerknapp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/redigerknapp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/listsymptom"
+        android:layout_width="105dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textSize="13sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listnavn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/redigerknapp"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/slettknapp"
+        app:layout_constraintStart_toStartOf="@+id/slettknapp"
+        app:layout_constraintTop_toBottomOf="@+id/listdato"
+        app:srcCompat="@drawable/ic_edit_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/slettknapp"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="41dp"
+        android:backgroundTint="#DF1818"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listdato"
+        app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Symptom:"
+        android:textSize="12sp"
+        android:textColor="#E3E3E3"
+        app:layout_constraintBottom_toTopOf="@+id/listsymptom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listnavn" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alvorlighet:"
+        android:textSize="12sp"
+        android:textColor="#E3E3E3"
+        app:layout_constraintBottom_toTopOf="@+id/listalvorlighet"
+        app:layout_constraintStart_toStartOf="@+id/listalvorlighet"
+        app:layout_constraintTop_toBottomOf="@+id/listnavn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

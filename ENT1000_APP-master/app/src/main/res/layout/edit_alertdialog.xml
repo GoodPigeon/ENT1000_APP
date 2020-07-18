@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="Matvare:"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:hint="Matvare"
+            android:text=""
+            android:ems="10"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:id="@+id/navntekst"
+            android:layout_height="92dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Velg et symptom:"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:text="Ingen symptomer"
+            android:gravity="center"
+            android:ems="10"
+            android:textColorHint="@color/gray"
+            android:id="@+id/symptominput"
+            android:layout_height="92dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Reaksjonens alvorlighetsgrad:"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:text="Ingen Reaksjon"
+            android:gravity="center"
+            android:ems="10"
+            android:textColorHint="@color/gray"
+            android:id="@+id/alvorlighetsinput"
+            android:layout_height="92dp"/>
+
+        <Button
+            android:text="Lagre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/registrerButton"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

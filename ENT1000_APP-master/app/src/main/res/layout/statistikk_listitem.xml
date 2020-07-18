@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@color/colorPrimary"
+    android:padding="15dp"
+    android:id="@+id/statistikk">
+
+
+    <TextView
+        android:id="@+id/innholdnavn"
+        android:layout_width="136dp"
+        android:layout_height="31dp"
+        android:autoSizeMaxTextSize="10sp"
+        android:autoSizeMinTextSize="1sp"
+        android:autoSizeStepGranularity="1sp"
+        android:gravity="left"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="3"
+        android:textColor="#FFFFFF"
+        app:autoSizeTextType="uniform"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sannsynlighettekst"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096"
+        tools:text="Innholdnavn" />
+
+    <TextView
+        android:id="@+id/beskrivelse"
+        android:layout_width="153dp"
+        android:layout_height="123dp"
+        android:autoSizeMaxTextSize="10sp"
+        android:autoSizeMinTextSize="1sp"
+        android:autoSizeStepGranularity="1sp"
+        android:gravity="left"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="3"
+        android:text="Beskrivelse tekst"
+        android:textColor="#FFFFFF"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/innholdnavn"
+        app:layout_constraintTop_toBottomOf="@+id/innholdnavn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sannsynlighettekst"
+        android:layout_width="107dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="3"
+        android:text="Sannsynlighet for intoleranse:"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/innholdnavn" />
+
+    <TextView
+        android:id="@+id/sannsynlighetverdi"
+        android:layout_width="97dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="3"
+        android:text="100%"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/beskrivelse"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <Button
+        android:id="@+id/historybtn"
+        android:layout_width="64dp"
+        android:layout_height="51dp"
+        android:text="Vis historie"
+        android:textSize="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toEndOf="@+id/sannsynlighetverdi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
